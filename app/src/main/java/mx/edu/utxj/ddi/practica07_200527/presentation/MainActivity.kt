@@ -61,9 +61,6 @@ class MainActivity : ComponentActivity() {
                 val dateFormat = SimpleDateFormat("HH:mm:ss", Locale.getDefault())
                 val formattedTime = dateFormat.format(currentTime)
                 clockTextView.text = formattedTime
-
-                // Programa la próxima actualización después de 1 segundo
-                // Se actualiza después de 1 segundo
                 saludoTextView.text = saludo
                 handler.postDelayed(this, 1000)
             }
